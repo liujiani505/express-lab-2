@@ -6,7 +6,7 @@ app.get('/greeting/:name', (req, res) =>{
     res.send("What's up " + req.params.name);
 });
 
-// Tip Calculator
+// Create a tip Calculator
 app.get('/tip/:total/:tipPercentage', (req, res) =>{
     const tip = req.params.total * req.params.tipPercentage/100
     res.send( `${tip}`);
